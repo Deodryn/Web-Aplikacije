@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="style.css">
+		<!-- End CSS -->
+		<!-- meta elements -->
+		<<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="description" content="Odvjetnička Web Stranica">
+        <meta name="keywords" content="Pravo, Odvjetnik, Pravna pomoć, Odvjetnica">		
+        <meta name="author" content="Petar Vnučec">
+		<!-- favicon meta -->
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+		<!-- end favicon meta -->
+		<!-- end meta elements -->
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+		<!-- End Google Fonts -->
+		<title>Kontaktirajte Nas</title>
+	</head>
+<body>
+	<header>
+		<div class="hero-image" style="height: 300px;"></div>
+		<nav>
+			<ul>
+			  <li><a href="index.html">Početna Stranica</a></li>
+			  <li><a href="news.html">Novosti</a></li>
+			  <li><a href="contact.html">Kontaktirajte Nas</a></li>
+			  <li><a href="about-us.html">O nama</a></li>
+			  <li><a href="gallery.html">Galerija</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Kontaktirajte Nas</h1>
+		<div id="contact">
+			<iframe src="https://maps.google.com/maps?q=hvarska%203&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<form action="http://work2.eburza.hr/pwa/responzive-page/send-contact.php" id="contact_form" name="contact_form" method="POST">
+				<label for="fname">Ime *</label>
+				<input type="text" id="fname" name="firstname" placeholder="Vaše ime.." required>
+
+				<label for="lname">Prezime *</label>
+				<input type="text" id="lname" name="lastname" placeholder="Vaše prezime.." required>
+				
+				<label for="lname">Vaš E-mail *</label>
+				<input type="email" id="email" name="email" placeholder="Vaš e-mail.." required>
+
+				<label for="country">Država</label>
+				<select id="country" name="Država">
+				  <option value="">Molimo Vas Izaberite</option>
+				  <option value="BE">Belgija</option>
+				  <option value="HR" selected>Hrvatska</option>
+				  <option value="LU">Luxemburg</option>
+				  <option value="HU">Mađarska</option>
+				</select>
+
+				<label for="subject">Tema</label>
+				<textarea id="subject" name="subject" placeholder="Unesite potrebne informacije.." style="height:200px"></textarea>
+
+				<input type="submit" value="Podnesite">
+			</form>
+		</div>
+	</main>
+</body>
+</html>
